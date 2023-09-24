@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        background-image: linear-gradient(rgb(9, 236, 199),rgb(207, 196, 196));
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        background-image: linear-gradient(rgb(200, 82, 216),rgb(184, 154, 176));
+        padding: 20px 30px;
+        margin: 60px 60px;
+        text-align: center;
+        width: 380px;
+        border-radius: 10%; 
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        margin-right: 7px;
+
+    }
+    .members{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        text-align: start;
+    }
+    button{
+        align-items: center;
+        
+    }
+    .members > label{
+        flex-basis: 130px;
+    }
+    .pic{
+        display:flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="details">
+            <form>
+                <div class="pic">
+                    <img src="https://pbs.twimg.com/profile_images/474591466749034496/2-H1zqWf_400x400.jpeg" >
+                    <h1>IEEE LOGIN</h1>
+                </div>
+                <div class="members">
+                    <label for="member">memebers id</label>   
+                    <input type="text" id="member" name="un">
+                </div>
+                <div class="members">
+                    <label for="p">Password</label>
+                    <input type="password"  id="P" name="pw">
+                </div>
+
+                <div class="members">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="g" >
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="g">
+                </div>
+                <button>Submit</button>
+                <button>Reset</button>
+                    <div> 
+                        <a href="#">forget password</a>
+                    </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
